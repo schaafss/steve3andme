@@ -1,0 +1,357 @@
+
+/*--------------------------------------------------------------------*/
+/*----------------------------BASIC SETUP----------------------------*/
+/*-------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'san-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*--------------- CLEAR FLOATS (In the UL in HTML page) --------------- */
+
+.clearfix{zoom: 1;}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------Reusable Components------------------------*/
+/*-------------------------------------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{padding: 80px 0;}
+
+/*------------------------HEADINGS------------------------*/
+
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    text-transform: capitalize;
+    padding: 3%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color: rgb(2, 45, 126);
+    font-size: 400%;
+    font-family: 'Lato', 'Arial', 'san-serif';
+    word-spacing: 10px;
+    letter-spacing: 0.5px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 5px;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 0.5px;
+    font-family: 'Lato', 'Arial', 'san-serif';
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h5{
+    padding: 16px 0;
+    color: rgb(2, 45, 126);
+    font-size: 100%;
+    font-family: 'Galada';
+    word-spacing: 5px;
+    letter-spacing: 0.5px;
+    float: left;
+    margin-left: 10px;
+}
+
+
+
+/*------------------------PARAGRAPHS------------------------*/
+
+.long-copy{
+    line-height: 145%;
+    width: 80%;
+    margin: 30px 0;
+    text-align: left;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------HEADER------------------------------*/
+/*-------------------------------------------------------------------*/
+
+header{
+    background-image: url(img/baby.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+/*------------------------Main Navigation------------------------*/
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: rgb(2, 45, 126);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 90%; 
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    -webkit-transition: border-bottom 0.2s;
+    -moz-transition: border-bottom 0.2s;
+    -ms-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid rgb(2, 45, 126);
+}
+
+/*------------------------Sticky Navigation------------------------*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 2px rgb(228, 228, 228);
+    z-index: 9999;
+}
+
+.sticky .main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 10px 0;
+    color: rgb(2, 45, 126);
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------------Ultrasounds---------------------------*/
+/*-------------------------------------------------------------------*/
+
+.section-ultrasounds{
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+.box img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------------Firsts---------------------------*/
+/*-------------------------------------------------------------------*/
+
+.section-firsts{
+    background-color: rgb(241, 241, 241);
+    padding: 8%;
+    margin-top: 50px;
+}
+
+.section-firsts h3{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.steps-box{
+    margin-top: 30px;
+}
+
+.date-pic{
+    width: 70%;
+}
+
+.first-para{
+    padding: 1.5%;
+}
+
+.firsts-step div{
+    color: #f39c12;
+    border: 2px solid #f39c12;
+    display: inline-block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 3px;
+    float: left;
+    font-size: 120%;
+    margin-right: 25px;
+}
+
+.firsts-step{
+    margin-bottom: 80px;
+}
+
+
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------------Cravings---------------------------*/
+/*-------------------------------------------------------------------*/
+
+
+
+.section-cravings{
+    background-image: url(img/temptations.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.good-cravings{
+    padding: 0;
+    float: left;
+    color: #fff;
+}
+
+.good-cravings li{
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+
+.bad-cravings{
+    padding: 0;
+    float: right;
+    color: #fff;
+}
+
+.bad-cravings li{
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------------Bump Pics---------------------------*/
+/*-------------------------------------------------------------------*/
+
+.section-Bump-pics{
+    background-color: rgb(226, 226, 226);
+    padding: 8%;
+    margin-top: 0;
+}
+
+.bump-pic img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.bump-pic p{
+    font-family: 'Galada',cursive;
+    font-weight: 300;
+    font-size: 80%;
+}
+
+
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------------Announcements-------------------------*/
+/*-------------------------------------------------------------------*/
+
+
+.section-announcements{
+    background-image: url(img/annoucement-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+
+}
+
+.shower{
+    float: left;
+    width: 20%;
+}
+
+.family{
+    float: right;
+    width: 30%;
+}
+
+
+
+/*--------------------------------------------------------------------*/
+/*------------------------------Baby Shower-------------------------*/
+/*-------------------------------------------------------------------*/
+
+.section-surprise-shower{
+    background-color: rgb(226, 226, 226);
+    padding: 5%;
+    margin-top: 0;
+}
+
+.party-time{
+    padding: 3%;
+    text-align: center;
+    font-family: 'Galada',cursive;
+}
+
+.party img{
+    width: 100%;
+    padding: 0;
+}
+
